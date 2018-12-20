@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dgi-lD-HPj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bahij_TheSansArabic-SemiBold.ttf">
+            <string>BahijTheSansArabicSemiBold</string>
+        </array>
+        <array key="Bahij_TheSansArabic-SemiLight.ttf">
+            <string>BahijTheSansArabic-SemiLight</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Language Set View Controller-->
+        <scene sceneID="3Az-5P-mA4">
+            <objects>
+                <viewController id="dgi-lD-HPj" customClass="LanguageSetViewController" customModule="Machines" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IS6-62-fpT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="zGH-bL-vn0">
+                                <rect key="frame" x="0.0" y="208.5" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="y3a-zW-nNn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مؤسسة الآلات العربية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJN-4N-Ban">
+                                <rect key="frame" x="42" y="70" width="291" height="50.5"/>
+                                <fontDescription key="fontDescription" name="BahijTheSansArabicSemiBold" family="Bahij TheSansArabic" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0039215686274509803" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="FO0-VE-uoN">
+                                <rect key="frame" x="47" y="520" width="281" height="97"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di9-lC-4VW">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dDu-d7-Uck"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BahijTheSansArabic-SemiLight" family="Bahij TheSansArabic" pointSize="17"/>
+                                        <state key="normal" title="اللغة العربية">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="arSet:" destination="dgi-lD-HPj" eventType="touchUpInside" id="AnX-My-xk9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5g-T8-dWs">
+                                        <rect key="frame" x="0.0" y="57" width="281" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.62745098040000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZVd-4j-mch"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BahijTheSansArabic-SemiLight" family="Bahij TheSansArabic" pointSize="17"/>
+                                        <state key="normal" title="English">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enSet:" destination="dgi-lD-HPj" eventType="touchUpInside" id="GR3-iy-43b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lkY-as-xoG" firstAttribute="trailing" secondItem="zGH-bL-vn0" secondAttribute="trailing" id="15L-l9-zvE"/>
+                            <constraint firstItem="xJN-4N-Ban" firstAttribute="centerX" secondItem="IS6-62-fpT" secondAttribute="centerX" id="KBY-v3-cai"/>
+                            <constraint firstItem="zGH-bL-vn0" firstAttribute="leading" secondItem="lkY-as-xoG" secondAttribute="leading" id="Ktf-Aa-zqu"/>
+                            <constraint firstItem="zGH-bL-vn0" firstAttribute="centerY" secondItem="IS6-62-fpT" secondAttribute="centerY" id="Vqv-q2-8g0"/>
+                            <constraint firstItem="xJN-4N-Ban" firstAttribute="top" secondItem="lkY-as-xoG" secondAttribute="top" constant="50" id="Wpp-NK-Yyc"/>
+                            <constraint firstItem="FO0-VE-uoN" firstAttribute="centerX" secondItem="IS6-62-fpT" secondAttribute="centerX" id="c1H-oc-jN4"/>
+                            <constraint firstItem="FO0-VE-uoN" firstAttribute="width" secondItem="IS6-62-fpT" secondAttribute="width" multiplier="0.75" id="ebJ-4k-aef"/>
+                            <constraint firstItem="lkY-as-xoG" firstAttribute="bottom" secondItem="FO0-VE-uoN" secondAttribute="bottom" constant="50" id="yy8-FS-yQv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lkY-as-xoG"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xJN-4N-Ban"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="arButton" destination="di9-lC-4VW" id="udq-be-0hR"/>
+                        <outlet property="enButton" destination="F5g-T8-dWs" id="1cm-D4-ea1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGJ-SO-Eh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash" width="826" height="538"/>
+    </resources>
+</document>
