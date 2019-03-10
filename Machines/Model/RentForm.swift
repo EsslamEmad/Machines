@@ -21,6 +21,8 @@ struct RentForm: Codable {
     var location: String!
     var phone: String!
     var email: String!
+    var catID: Int!
+    var name: String!
     
     enum CodingKeys: String, CodingKey {
         case userID = "user_id"
@@ -35,5 +37,7 @@ struct RentForm: Codable {
         case location
         case phone
         case email
+        case catID = "cat_id"
+        case name = "res_person"
     }
 }

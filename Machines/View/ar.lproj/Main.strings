@@ -1,0 +1,159 @@
+
+/* Class = "UILabel"; text = "نص الرسالة"; ObjectID = "1db-rC-5fA"; */
+"1db-rC-5fA.text" = "نص الرسالة";
+
+/* Class = "UIButton"; normalTitle = "شراء"; ObjectID = "4ML-eF-EjL"; */
+"4ML-eF-EjL.normalTitle" = "شراء";
+
+/* Class = "UIButton"; normalTitle = "أرسل الطلب"; ObjectID = "5eN-fe-UaH"; */
+"5eN-fe-UaH.normalTitle" = "أرسل الطلب";
+
+/* Class = "UIButton"; normalTitle = "إحفظ بياناتك"; ObjectID = "6vR-iS-qhV"; */
+"6vR-iS-qhV.normalTitle" = "إحفظ بياناتك";
+
+/* Class = "UIButton"; normalTitle = "بيع"; ObjectID = "8JW-yu-HIS"; */
+"8JW-yu-HIS.normalTitle" = "بيع";
+
+/* Class = "UILabel"; text = "السرعة"; ObjectID = "90F-2M-Ykt"; */
+"90F-2M-Ykt.text" = "السرعة";
+
+/* Class = "UILabel"; text = "تسجيل الخروج"; ObjectID = "BTp-2Q-KfJ"; */
+"BTp-2Q-KfJ.text" = "تسجيل الخروج";
+
+/* Class = "UIBarButtonItem"; title = "الرئيسية"; ObjectID = "CcC-JG-tfY"; */
+"CcC-JG-tfY.title" = "الرئيسية";
+
+/* Class = "UIViewController"; title = "اترك رسالة"; ObjectID = "D5L-Ny-l3e"; */
+"D5L-Ny-l3e.title" = "اترك رسالة";
+
+/* Class = "UILabel"; text = "الوزن"; ObjectID = "GWm-La-2Wv"; */
+"GWm-La-2Wv.text" = "الوزن";
+
+/* Class = "UILabel"; text = "0 نتيجة بحث"; ObjectID = "ImL-ua-pYY"; */
+"ImL-ua-pYY.text" = "0 نتيجة بحث";
+
+/* Class = "UILabel"; text = "سجل المشتريات"; ObjectID = "MVT-0d-6cP"; */
+"MVT-0d-6cP.text" = "سجل المشتريات";
+
+/* Class = "UILabel"; text = "تغيير اللغة"; ObjectID = "Maz-Xi-9s9"; */
+"Maz-Xi-9s9.text" = "تغيير اللغة";
+
+/* Class = "UILabel"; text = "شراء"; ObjectID = "NZv-Jv-PNZ"; */
+"NZv-Jv-PNZ.text" = "شراء";
+
+/* Class = "UIButton"; normalTitle = "أطلب الآن"; ObjectID = "QH4-P6-Mab"; */
+"QH4-P6-Mab.normalTitle" = "أطلب الآن";
+
+/* Class = "UIButton"; normalTitle = "شراء"; ObjectID = "RPa-wl-po8"; */
+"RPa-wl-po8.normalTitle" = "شراء";
+
+/* Class = "UILabel"; text = "إيجار"; ObjectID = "RbA-zb-Gws"; */
+"RbA-zb-Gws.text" = "إيجار";
+
+/* Class = "UIButton"; normalTitle = "ارسل"; ObjectID = "S1x-BS-yzo"; */
+"S1x-BS-yzo.normalTitle" = "ارسل";
+
+/* Class = "UILabel"; text = "تسجيل الدخول"; ObjectID = "U1h-xg-4z3"; */
+"U1h-xg-4z3.text" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "مؤسسة الآلات العربية"; ObjectID = "UcK-yl-muZ"; */
+"UcK-yl-muZ.text" = "مؤسسة الآلات العربية";
+
+/* Class = "UINavigationItem"; title = "إختر خدمة"; ObjectID = "Uwr-sb-pm0"; */
+"Uwr-sb-pm0.title" = "إختر خدمة";
+
+/* Class = "UILabel"; text = "رفع آلي"; ObjectID = "VFl-BB-ih7"; */
+"VFl-BB-ih7.text" = "رفع آلي";
+
+/* Class = "UISearchBar"; placeholder = "بحث"; ObjectID = "XY2-GD-cxz"; */
+"XY2-GD-cxz.placeholder" = "بحث";
+
+/* Class = "UILabel"; text = "تحميل وزن زائد"; ObjectID = "YWs-3r-YCW"; */
+"YWs-3r-YCW.text" = "تحميل وزن زائد";
+
+/* Class = "UILabel"; text = "الإسم: "; ObjectID = "Z0J-dC-JAe"; */
+"Z0J-dC-JAe.text" = "الإسم: ";
+
+/* Class = "UILabel"; text = "تفاصيل المنتج"; ObjectID = "Zvd-iL-sIG"; */
+"Zvd-iL-sIG.text" = "تفاصيل المنتج";
+
+/* Class = "UILabel"; text = "البريد الإلكتروني: "; ObjectID = "aeQ-pB-bjc"; */
+"aeQ-pB-bjc.text" = "البريد الإلكتروني: ";
+
+/* Class = "UILabel"; text = "الميزات"; ObjectID = "ah0-Jl-dBX"; */
+"ah0-Jl-dBX.text" = "الميزات";
+
+/* Class = "UIButton"; normalTitle = "مشوار خارجي"; ObjectID = "b3L-O8-wZn"; */
+"b3L-O8-wZn.normalTitle" = "مشوار خارجي";
+
+/* Class = "UILabel"; text = "تحكم عن بعد"; ObjectID = "cTJ-2h-4oA"; */
+"cTJ-2h-4oA.text" = "تحكم عن بعد";
+
+/* Class = "UILabel"; text = "المفضلة"; ObjectID = "cs7-iJ-EoK"; */
+"cs7-iJ-EoK.text" = "المفضلة";
+
+/* Class = "UILabel"; text = "عدد ساعات العمل"; ObjectID = "d0v-M1-e5s"; */
+"d0v-M1-e5s.text" = "عدد ساعات العمل";
+
+/* Class = "UITableViewController"; title = "الإشعارات"; ObjectID = "ecu-vn-rQq"; */
+"ecu-vn-rQq.title" = "الإشعارات";
+
+/* Class = "UIButton"; normalTitle = "عدل بياناتك"; ObjectID = "gcJ-do-RNE"; */
+"gcJ-do-RNE.normalTitle" = "عدل بياناتك";
+
+/* Class = "UIViewController"; title = "إتصل بنا"; ObjectID = "h3r-zq-tCI"; */
+"h3r-zq-tCI.title" = "إتصل بنا";
+
+/* Class = "UIButton"; normalTitle = "أرسل الطلب"; ObjectID = "h58-X6-HcQ"; */
+"h58-X6-HcQ.normalTitle" = "أرسل الطلب";
+
+/* Class = "UIButton"; normalTitle = "مشوار داخلي"; ObjectID = "hEz-YH-ko8"; */
+"hEz-YH-ko8.normalTitle" = "مشوار داخلي";
+
+/* Class = "UILabel"; text = "إتصل بنا"; ObjectID = "hRy-mF-mvo"; */
+"hRy-mF-mvo.text" = "إتصل بنا";
+
+/* Class = "UIButton"; normalTitle = "اطلب الآن"; ObjectID = "iMp-E8-7km"; */
+"iMp-E8-7km.normalTitle" = "اطلب الآن";
+
+/* Class = "UILabel"; text = "نص الرسالة"; ObjectID = "iYO-9s-z9e"; */
+"iYO-9s-z9e.text" = "نص الرسالة";
+
+/* Class = "UILabel"; text = "تحمل ثقل"; ObjectID = "jam-la-qui"; */
+"jam-la-qui.text" = "تحمل ثقل";
+
+/* Class = "UINavigationItem"; title = "Root View Controller"; ObjectID = "qNC-LY-xPU"; */
+"qNC-LY-xPU.title" = "Root View Controller";
+
+/* Class = "UILabel"; text = "الملف الشخصي"; ObjectID = "qYP-XN-0Uw"; */
+"qYP-XN-0Uw.text" = "الملف الشخصي";
+
+/* Class = "UILabel"; text = "السرعة"; ObjectID = "r9l-SL-0LV"; */
+"r9l-SL-0LV.text" = "السرعة";
+
+/* Class = "UILabel"; text = "سجل الإيجارات"; ObjectID = "rJA-lE-wrO"; */
+"rJA-lE-wrO.text" = "سجل الإيجارات";
+
+/* Class = "UICollectionViewController"; title = "الرئيسية"; ObjectID = "rvy-jz-aSJ"; */
+"rvy-jz-aSJ.title" = "الرئيسية";
+
+/* Class = "UIButton"; normalTitle = "إيجار"; ObjectID = "sJT-Hg-jhP"; */
+"sJT-Hg-jhP.normalTitle" = "إيجار";
+
+/* Class = "UILabel"; text = "الحالة العامة"; ObjectID = "syI-Ue-hcq"; */
+"syI-Ue-hcq.text" = "الحالة العامة";
+
+/* Class = "UIButton"; normalTitle = "أطلب الآن"; ObjectID = "teS-0l-qcr"; */
+"teS-0l-qcr.normalTitle" = "أطلب الآن";
+
+/* Class = "UIViewController"; title = "تعديل البيانات"; ObjectID = "vXw-0j-cU1"; */
+"vXw-0j-cU1.title" = "تعديل البيانات";
+
+/* Class = "UILabel"; text = "قدرة الرفع"; ObjectID = "wHZ-ZO-rDp"; */
+"wHZ-ZO-rDp.text" = "قدرة الرفع";
+
+/* Class = "UILabel"; text = "رقم الجوال: "; ObjectID = "wk1-ev-LTV"; */
+"wk1-ev-LTV.text" = "رقم الجوال: ";
+
+/* Class = "UILabel"; text = "من نحن"; ObjectID = "wmR-U3-97V"; */
+"wmR-U3-97V.text" = "من نحن";

@@ -6,6 +6,7 @@
 //  Copyright © 2017 MagicLab. All rights reserved.
 //
 import UIKit
+import Localize_Swift
 
 
 private let appleLanguagesKey = "AppleLanguages"
@@ -51,6 +52,18 @@ enum Language: String {
             Auth.auth.isLanguageSet = true
             UserDefaults.standard.set([newValue.rawValue], forKey: appleLanguagesKey)
             UserDefaults.standard.synchronize()
+            let selectedLanguage:Languages = language.rawValue == "en" ? .en : .ar
+            
+            // change the language
+            LanguageManager.shared.setLanguage(language: selectedLanguage)
+            
+            // then you must to pop all view controllers and return to root view controller then re set the root view controller
+            UIApplication.topViewController!.dismiss(animated: true) {
+                print(1)
+                let delegate = UIApplication.shared.delegate as! AppDelegate
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                delegate.window?.rootViewController = storyboard.instantiateInitialViewController()
+            }
             guard language != newValue else {
                 
                 return
@@ -68,6 +81,11 @@ enum Language: String {
             //Auth.auth.language = newValue.rawValue
             
             UIApplication.shared.keyWindow?.rootViewController?.showAlert(error: false, withMessage: NSLocalizedString("Please, restart the application to change the language!", comment: ""), completion: nil)
+            print(1)
+            
+            
+            
+            //Localize.setCurrentLanguage(language.rawValue)
             
             
             

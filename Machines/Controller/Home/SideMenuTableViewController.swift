@@ -20,18 +20,18 @@ class SideMenuTableViewController: UITableViewController {
         profilePicture.layer.cornerRadius = 50.0
         profilePicture.clipsToBounds = true
         
-        guard Auth.auth.user != nil else {
-            profilePicture.image = UIImage(named: "AppIcon")
-            return
-        }
-        if let imgurl = URL(string: Auth.auth.user!.photo){
+      //  guard Auth.auth.user != nil else {
+           // profilePicture.image = UIImage(named: "AppIcon")
+        //    return
+      //  }
+     /*   if let imgurl = URL(string: Auth.auth.user!.photo){
             profilePicture.kf.indicatorType = .activity
             profilePicture.kf.setImage(with: imgurl)
             //profilePicture.layer.cornerRadius = 50.0
             //profilePicture.clipsToBounds = true
-        }
-        nameLabel.text = Auth.auth.user!.name
-        emailLabel.text = Auth.auth.user!.email
+        }*/
+        nameLabel.text = NSLocalizedString("مؤسسة الآليات العربية", comment: "")
+     //   emailLabel.text = Auth.auth.user!.email
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -60,6 +60,23 @@ class SideMenuTableViewController: UITableViewController {
         case 5:
             performSegue(withIdentifier: "Login", sender: nil)
         case 6:
+            self.dismiss(animated: true, completion: nil)
+            if L102Language.currentAppleLanguage() == "en" {
+                L102Language.setAppleLAnguageTo(lang: "ar")
+                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            } else {
+                L102Language.setAppleLAnguageTo(lang: "en")
+                UIView.appearance().semanticContentAttribute = .forceLeftToRight
+            }
+            Auth.auth.language = L102Language.currentAppleLanguage()
+            let rootviewcontroller: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+            rootviewcontroller.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController")
+            let mainwindow = (UIApplication.shared.delegate?.window!)!
+            mainwindow.backgroundColor = UIColor(hue: 0.6477, saturation: 0.6314, brightness: 0.6077, alpha: 0.8)
+            UIView.transition(with: mainwindow, duration: 0.55001, options: .transitionFlipFromLeft, animations: { () -> Void in
+            }) { (finished) -> Void in
+            }
+            /*
             let alert = UIAlertController(title: NSLocalizedString("اللغة", comment: ""), message: NSLocalizedString("إختر اللغة!", comment: ""), preferredStyle: .actionSheet)
             let eng = UIAlertAction(title: "English", style: .default, handler: {(UIAlertAction) -> Void in
                 guard Language.language != .english else{
@@ -80,6 +97,7 @@ class SideMenuTableViewController: UITableViewController {
             alert.addAction(ar)
             alert.addAction(cancel)
             self.present(alert, animated: true, completion: nil)
+ */
         case 7:
             performSegue(withIdentifier: "show contact us", sender: nil)
         case 8:
@@ -102,14 +120,15 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let signedIn = Auth.auth.user == nil ? false : true
+        //let signedIn = Auth.auth.user == nil ? false : true
+        let signedIn = false
         switch indexPath.row {
         case 0: return 200
         case 1: return signedIn ? 60: 0
         case 2: return signedIn ? 60: 0
         case 3: return signedIn ? 60: 0
         case 4: return signedIn ? 60: 0
-        case 5: return signedIn ? 0: 60
+        case 5: return signedIn ? 0: 0
         case 6: return 60
         case 7: return 60
         case 8: return 60

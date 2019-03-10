@@ -43,7 +43,7 @@ class AddOrderViewController: UIViewController {
     }
     
     @IBAction func didPressAdd(_ sender: Any?){
-        guard let title = titleTF.text, title != "", let message = messageTV.text, message != "" else {
+     /*   guard let title = titleTF.text, title != "", let message = messageTV.text, message != "" else {
             self.showAlert(withMessage: NSLocalizedString("من فضلك قم بإدخال عنوان و نص الرسالة!", comment: ""))
             return
         }
@@ -59,7 +59,7 @@ class AddOrderViewController: UIViewController {
                 self.showAlert(withMessage: $0.localizedDescription)
             }.finally {
                 SVProgressHUD.dismiss()
-        }
+        }*/
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{

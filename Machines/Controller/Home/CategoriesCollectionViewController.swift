@@ -10,15 +10,16 @@ import UIKit
 import SVProgressHUD
 import PromiseKit
 import RZTransitions
+import SideMenu
 
-class CategoriesCollectionViewController: UICollectionViewController {
+class CategoriesCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.transitioningDelegate = RZTransitionsManager.shared()
         
-        if Auth.auth.categories == nil {
+        //if Auth.auth.categories == nil {
             SVProgressHUD.show()
             firstly{
                 return API.CallApi(APIRequests.getCategories)
@@ -30,13 +31,24 @@ class CategoriesCollectionViewController: UICollectionViewController {
                 }.finally {
                     SVProgressHUD.dismiss()
             }
-        }
+       // }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isTranslucent = false
        // self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "rectangle9"), for: .default)
         self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    @IBAction func didPressSideMenu(_ sender: Any?) {
+        let sideMenu = storyboard?.instantiateViewController(withIdentifier: "SideMenu") as! UISideMenuNavigationController
+        //sideMenu.sideMenuManager.menuPresentMode = .viewSlideInOut
+        //sideMenu.sideMenuManager.menuAnimationFadeStrength = 0.75
+        
+        if Auth.auth.language == "en"{
+            sideMenu.leftSide = true
+        }
+        present(sideMenu, animated: true, completion: nil)
     }
 
     // MARK: UICollectionViewDataSource
@@ -56,8 +68,8 @@ class CategoriesCollectionViewController: UICollectionViewController {
         cell.clipsToBounds = true
         cell.layer.cornerRadius = 10.0
         guard indexPath.row != (Auth.auth.categories?.count ?? 0) else {
-            cell.label.text = NSLocalizedString("من نحن", comment: "")
-            cell.photo.image = UIImage(named: "faUsers")
+            cell.label.text = ""
+            cell.photo.image = UIImage(named: "black")
             return cell
         }
         let cats = Auth.auth.categories!
@@ -85,9 +97,12 @@ class CategoriesCollectionViewController: UICollectionViewController {
             performSegue(withIdentifier: "show about us", sender: nil)
             return
         }
-        performSegue(withIdentifier: "show equipments", sender: indexPath.row)
+        performSegue(withIdentifier: "show category", sender: indexPath.row)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.size.width / 2 - 30, height: view.frame.size.width / 2 - 30)
+    }
     
     //navigation
     
@@ -95,8 +110,11 @@ class CategoriesCollectionViewController: UICollectionViewController {
         if segue.identifier == "show equipments" {
             let destination = segue.destination as! EquipmentsViewController
             destination.buy = false
-            destination.catID = Auth.auth.categories![(sender as! Int)].id
-            destination.formType = Auth.auth.categories![(sender as! Int)].formType
+            //destination.catID = Auth.auth.categories![(sender as! Int)].id
+            //destination.formType = Auth.auth.categories![(sender as! Int)].formType
+        } else if segue.identifier == "show category"{
+            let destination = segue.destination as! CategoryViewController
+            destination.category = Auth.auth.categories![(sender as! Int)]
         }
     }
 }

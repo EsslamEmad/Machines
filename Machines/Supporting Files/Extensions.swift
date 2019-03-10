@@ -20,6 +20,7 @@ extension UIViewController: UITextFieldDelegate {
     }
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
         if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
             nextField.becomeFirstResponder()
         } else if let nextField = textField.superview?.superview?.viewWithTag(textField.tag + 1) as? UITextField {

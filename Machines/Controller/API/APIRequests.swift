@@ -21,7 +21,7 @@ enum APIRequests {
     case getPages
     case getPage(id: Int)
     case upload(image: UIImage?, file: URL?)
-    case addOrder(equipID: Int, userID: Int, title: String, details: String)
+    case addOrder(equipID: Int, company: String, email: String, phone: String, name: String)
     case addToWishlist(equipID: Int)
     case getWishlist
     case removeFromWishlist(equipID: Int!)
@@ -45,9 +45,9 @@ extension APIRequests: TargetType{
     var baseURL: URL{
         switch Auth.auth.language{
         case "en":
-            return URL(string: "https://sh.alyomhost.net/equipment/en/mobile")!
+            return URL(string: "https://www.arabicmachinery.net/en/mobile")!
         default:
-            return URL(string: "https://sh.alyomhost.net/equipment/ar/mobile")!
+            return URL(string: "https://www.arabicmachinery.net/ar/mobile")!
         }
         
     }
@@ -154,8 +154,8 @@ extension APIRequests: TargetType{
             }
             
             return .requestPlain
-        case .addOrder(equipID: let equipID, userID: let userID, title: let title, details: let details):
-            return .requestParameters(parameters: ["equipment_id": equipID, "user_id": userID, "order_subject": title, "order_details": details], encoding: JSONEncoding.default)
+        case .addOrder(equipID: let equipID, company: let company, email: let email, phone: let phone, name: let name):
+            return .requestParameters(parameters: ["equipment_id": equipID, "phone": phone, "email": email, "company_name": company, "res_person": name], encoding: JSONEncoding.default)
         case .addToWishlist(equipID: let id):
             return .requestParameters(parameters: ["user_id": Auth.auth.user!.id, "equip_id": id], encoding: JSONEncoding.default)
         case .search(search: let search):

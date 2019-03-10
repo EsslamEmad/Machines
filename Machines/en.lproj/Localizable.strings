@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Machines
+
+  Created by Esslam Emad on 27/12/18.
+  Copyright © 2018 Alyom Apps. All rights reserved.
+*/
+
+"Please, restart the application to change the language!" = "من فضلك أعد تشغيل البرنامج لتطبيق اللغة";
+"مؤسسة الآلات العربية" = "Arabic Machines Ins.";
+" نتيجة بحث" = " search result(s)";
+" ريال سعودي" = " S.R.";
+"بيع" = "Sell";
+"يرجى ادخال جميع البيانات" = "Please, enter all informations.";
+"من فضلك ادخل جميع بياناتك" = "Please, enter all informations.";
+"البريد الالكتروني غير صحيح" = "Email is incorrect";
+"من فضلك ادخل جميع البيانات" = "please, enter all informations.";
+"من فضلك قم بإدخال جميع البيانات." = "Please, Enter all informations.";
+"خطأ" = "Error";
+"تم" = "Done";
+"حسنا" = "OK";
+"إسم الشركة" = "Company Name";
+"إسم الشخص المسؤول" = "Responsible Person Name";
+"البريد الإلكتروني" = "E-mail";
+"رقم الجوال" = "Phone Number";
+"الإسم" = "Name";
+"المدة المتاحة" = "Available Period";
+"الطن" = "Tons";
+"التفاصيل" = "Details";
+"إلى:" = "To:";
+"من:" = "From:";
+"موقع العمل" = "Work Location";
+"مؤسسة الآليات العربية" = "Arabic Machines Ins.";

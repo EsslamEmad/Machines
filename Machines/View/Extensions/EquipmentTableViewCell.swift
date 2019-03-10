@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class EquipmentTableViewCell: UITableViewCell {
 
@@ -17,6 +18,8 @@ class EquipmentTableViewCell: UITableViewCell {
     @IBOutlet weak var detailsLabel: UILabel!
     @IBOutlet weak var buyButton: UIButton!
     @IBOutlet weak var buyOrRentLabel: UILabel!
+    @IBOutlet weak var slideShow: ImageSlideshow!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

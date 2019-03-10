@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-import Foundation
 import DefaultsKit
 import PromiseKit
 
@@ -84,6 +82,7 @@ class Auth {
     
     
     func updateToken(){
+        print(1)
      if user != nil {
      if user!.token != fcmToken{
      user!.token = fcmToken

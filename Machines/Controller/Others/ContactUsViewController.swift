@@ -34,6 +34,12 @@ class ContactUsViewController: UIViewController {
             emailTF.textAlignment = .right
             messageTV.textAlignment = .right
         }
+        nameTF.placeholder = NSLocalizedString("الإسم", comment: "")
+        nameTF.selectedTitle = NSLocalizedString("الإسم", comment: "")
+        nameTF.title = NSLocalizedString("الإسم", comment: "")
+        emailTF.placeholder = NSLocalizedString("البريد الإلكتروني", comment: "")
+        emailTF.selectedTitle = NSLocalizedString("البريد الإلكتروني", comment: "")
+        emailTF.title = NSLocalizedString("البريد الإلكتروني", comment: "")
     }
     
     override func viewWillAppear(_ animated: Bool) {

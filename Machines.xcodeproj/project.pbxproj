@@ -46,6 +46,12 @@
 		920A4BB821C539150065686E /* WeightPeriodOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A4BB721C539150065686E /* WeightPeriodOptions.swift */; };
 		920A4BBA21C5393C0065686E /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920A4BB921C5393C0065686E /* Period.swift */; };
 		920B34152199C20800B8DBD9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920B34142199C20800B8DBD9 /* Category.swift */; };
+		9219427121ECF15100289672 /* LanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219427021ECF15100289672 /* LanguageManager.swift */; };
+		9219427421ECF85700289672 /* file1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219427321ECF85700289672 /* file1.swift */; };
+		9219427621ECF99C00289672 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9219427521ECF99C00289672 /* L012Localizer.swift */; };
+		92687C0521CBEA49003BD0A5 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92687C0421CBEA49003BD0A5 /* CategoryViewController.swift */; };
+		92687C0721CE710F003BD0A5 /* AddOrderPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92687C0621CE710F003BD0A5 /* AddOrderPopoverViewController.swift */; };
+		92A0316721D4EE8D00868318 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92A0316921D4EE8D00868318 /* Localizable.strings */; };
 		92B0B895218D910E00E80C39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92B0B894218D910E00E80C39 /* GoogleService-Info.plist */; };
 		92B0B898218D9B7300E80C39 /* NotificationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0B897218D9B7300E80C39 /* NotificationsTableViewController.swift */; };
 		92B0B89A218DAC7600E80C39 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B0B899218DAC7600E80C39 /* Notification.swift */; };
@@ -100,6 +106,15 @@
 		920A4BB721C539150065686E /* WeightPeriodOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightPeriodOptions.swift; sourceTree = "<group>"; };
 		920A4BB921C5393C0065686E /* Period.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Period.swift; sourceTree = "<group>"; };
 		920B34142199C20800B8DBD9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9219427021ECF15100289672 /* LanguageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManager.swift; sourceTree = "<group>"; };
+		9219427321ECF85700289672 /* file1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = file1.swift; sourceTree = "<group>"; };
+		9219427521ECF99C00289672 /* L012Localizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
+		92687C0421CBEA49003BD0A5 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		92687C0621CE710F003BD0A5 /* AddOrderPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderPopoverViewController.swift; sourceTree = "<group>"; };
+		92754CF321D4F3680060A16A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		92A0315A21D4E4BC00868318 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		92A0316821D4EE8D00868318 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92A0316A21D4EE9E00868318 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		92B0B894218D910E00E80C39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92B0B896218D998600E80C39 /* Machines.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Machines.entitlements; sourceTree = "<group>"; };
 		92B0B897218D9B7300E80C39 /* NotificationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTableViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +124,7 @@
 		92B711C5218B23E700F4E51B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		92C45A5C218B4D2D00E8E23B /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		92C45A5E218B532500E8E23B /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		92EA47E821DE13A50094C051 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		C5467642B4D609C4E5053B16 /* Pods_Machines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Machines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA760242F663EC68DC6FD47 /* Pods-Machines.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Machines.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Machines/Pods-Machines.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +178,7 @@
 				920180A22180A103000944C9 /* View */,
 				9201809F2180A095000944C9 /* Controller */,
 				9201809E2180A082000944C9 /* Supporting Files */,
+				92A0316921D4EE8D00868318 /* Localizable.strings */,
 			);
 			path = Machines;
 			sourceTree = "<group>";
@@ -241,8 +258,10 @@
 		920180BA2181F3D8000944C9 /* Language */ = {
 			isa = PBXGroup;
 			children = (
+				9219427221ECF84900289672 /* L102 */,
 				920180BB2181F410000944C9 /* LanguageSetViewController.swift */,
 				920180BD2181F431000944C9 /* Localizing.swift */,
+				9219427021ECF15100289672 /* LanguageManager.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -276,6 +295,7 @@
 				920180CF2187562E000944C9 /* EquipmentsViewController.swift */,
 				920180DA218A0594000944C9 /* SideMenuTableViewController.swift */,
 				920A4BAF21C29DED0065686E /* CategoriesCollectionViewController.swift */,
+				92687C0421CBEA49003BD0A5 /* CategoryViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -297,8 +317,18 @@
 				920180D62189DA36000944C9 /* AddOrderViewController.swift */,
 				920180D82189FD00000944C9 /* EquipmentsListTableViewController.swift */,
 				920A4BB321C5312D0065686E /* RentFormTableViewController.swift */,
+				92687C0621CE710F003BD0A5 /* AddOrderPopoverViewController.swift */,
 			);
 			path = Equipments;
+			sourceTree = "<group>";
+		};
+		9219427221ECF84900289672 /* L102 */ = {
+			isa = PBXGroup;
+			children = (
+				9219427321ECF85700289672 /* file1.swift */,
+				9219427521ECF99C00289672 /* L012Localizer.swift */,
+			);
+			path = L102;
 			sourceTree = "<group>";
 		};
 		92B711C2218B23C100F4E51B /* Profile */ = {
@@ -377,6 +407,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 9201807E2180998F000944C9;
 			productRefGroup = 920180882180998F000944C9 /* Products */;
@@ -402,6 +433,7 @@
 				920180D121877932000944C9 /* 29lt-bukra-regular.ttf in Resources */,
 				920180E0218A13E1000944C9 /* Bahij_TheSansArabic-ExtraBold.ttf in Resources */,
 				92B0B895218D910E00E80C39 /* GoogleService-Info.plist in Resources */,
+				92A0316721D4EE8D00868318 /* Localizable.strings in Resources */,
 				9201809221809993000944C9 /* Assets.xcassets in Resources */,
 				920180B92181E858000944C9 /* Login.storyboard in Resources */,
 				920180902180998F000944C9 /* Main.storyboard in Resources */,
@@ -419,10 +451,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Machines/Pods-Machines-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DefaultsKit/DefaultsKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
@@ -437,10 +475,16 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DefaultsKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
@@ -485,10 +529,12 @@
 				92B0B89C218DACDC00E80C39 /* NotificationTableViewCell.swift in Sources */,
 				920180C121820716000944C9 /* LoginViewController.swift in Sources */,
 				920180B02180AFD3000944C9 /* APIRequests.swift in Sources */,
+				9219427121ECF15100289672 /* LanguageManager.swift in Sources */,
 				92C45A5F218B532500E8E23B /* ContactUsViewController.swift in Sources */,
 				920180CE2187528A000944C9 /* EquipmentTableViewCell.swift in Sources */,
 				920180AB2180AEFD000944C9 /* MessageResponse.swift in Sources */,
 				920180AD2180AF41000944C9 /* UploadResponse.swift in Sources */,
+				92687C0721CE710F003BD0A5 /* AddOrderPopoverViewController.swift in Sources */,
 				92B0B898218D9B7300E80C39 /* NotificationsTableViewController.swift in Sources */,
 				920180D5218789E1000944C9 /* EquipmentViewController.swift in Sources */,
 				92B711C4218B23D900F4E51B /* ProfileViewController.swift in Sources */,
@@ -498,6 +544,8 @@
 				92B711C6218B23E700F4E51B /* EditProfileViewController.swift in Sources */,
 				920180D02187562E000944C9 /* EquipmentsViewController.swift in Sources */,
 				9201808B2180998F000944C9 /* AppDelegate.swift in Sources */,
+				92687C0521CBEA49003BD0A5 /* CategoryViewController.swift in Sources */,
+				9219427421ECF85700289672 /* file1.swift in Sources */,
 				920A4BB421C5312D0065686E /* RentFormTableViewController.swift in Sources */,
 				920180BC2181F410000944C9 /* LanguageSetViewController.swift in Sources */,
 				920A4BB221C2A49E0065686E /* CategoryCollectionViewCell.swift in Sources */,
@@ -512,6 +560,7 @@
 				92B0B89A218DAC7600E80C39 /* Notification.swift in Sources */,
 				920180C32184FA56000944C9 /* Extensions.swift in Sources */,
 				920180C8218546B4000944C9 /* RegisterViewController.swift in Sources */,
+				9219427621ECF99C00289672 /* L012Localizer.swift in Sources */,
 				920180B22180AFE6000944C9 /* APIConvenience.swift in Sources */,
 				920180A72180A80D000944C9 /* Equipment.swift in Sources */,
 				920A4BB621C5377B0065686E /* RentForm.swift in Sources */,
@@ -527,6 +576,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9201808F2180998F000944C9 /* Base */,
+				92754CF321D4F3680060A16A /* en */,
+				92EA47E821DE13A50094C051 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -535,8 +586,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9201809421809993000944C9 /* Base */,
+				92A0315A21D4E4BC00868318 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92A0316921D4EE8D00868318 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92A0316821D4EE8D00868318 /* en */,
+				92A0316A21D4EE9E00868318 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -546,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -607,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -664,6 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Machines/Machines.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E4SEUDA7B;
 				INFOPLIST_FILE = Machines/Info.plist;
@@ -673,6 +737,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alyomapps.Machines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -684,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Machines/Machines.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6E4SEUDA7B;
 				INFOPLIST_FILE = Machines/Info.plist;
@@ -693,6 +759,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alyomapps.Machines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
